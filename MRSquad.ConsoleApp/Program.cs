@@ -8,14 +8,26 @@ namespace MRSquad.ConsoleApp
         {
             try
             {
-                IPlanetSurface Mars = new MarsSurface("5 5");
-                Console.WriteLine($"X coord:{Mars._width}, Y coord:{Mars._height}");
+                Console.WriteLine("MRSquad by Kaan KAZAZ");
 
-                IVehicle rover1 = new MarsRover("1 2 N", "LMLMLMLMM", Mars);
-                Console.WriteLine(rover1.PrintFinalPositionAndHeading());
+                IPlanetSurface mars = new MarsSurface("5 5");
+                Console.WriteLine($"X coord:{mars._width}, Y coord:{mars._height}");
 
-                IVehicle rover2 = new MarsRover("3 3 E", "MMRMMRMRRM", Mars);
-                Console.WriteLine(rover2.PrintFinalPositionAndHeading());
+                //IVehicle rover1 = new MarsRover("1 2 N", "LMLMLMLMM", mars);
+                //Console.WriteLine(rover1.PrintFinalPositionAndHeading());
+
+                //IVehicle rover2 = new MarsRover("3 3 E", "MMRMMRMRRM", mars);
+                //Console.WriteLine(rover2.PrintFinalPositionAndHeading());
+
+                Squad mrSquad = new Squad(mars);
+
+                mrSquad.AddVehicle("1 2 N", "LMLMLMLMM");
+                mrSquad.AddVehicle("3 3 E", "MMRMMRMRRM");
+
+                foreach (var marsRover in mrSquad)
+                {
+                    Console.WriteLine(marsRover.PrintFinalPositionAndHeading());
+                }
             }
             catch (Exception ex)
             {
