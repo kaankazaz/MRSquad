@@ -3,6 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Kaan KAZAZ</Authors>
+    <Copyright>Kaan KAZAZ 2020</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MRSquad.Library\MRSquad.Library.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MRSquad.ConsoleApp
+namespace MRSquad.Library
 {
     public class Squad : List<IVehicle>
     {

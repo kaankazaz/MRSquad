@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MRSquad.ConsoleApp
+namespace MRSquad.Library
 {
     public class MarsRover : IVehicle
     {
@@ -29,7 +29,7 @@ namespace MRSquad.ConsoleApp
         public MarsRover(string initialPos, string moveCommands, IPlanetSurface planet)
         {
             initialPos = initialPos.ToUpper(); //Convert all commands to uppercase
-            string[] positionXY = initialPos.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            string[] positionXY = initialPos.Split(' ', (char)StringSplitOptions.RemoveEmptyEntries);
 
             if (positionXY.Length != 3)
                 throw new MRSquadException("Rover position must consist of two coordinates (X and Y)");

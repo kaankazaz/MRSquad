@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Mars Rover Squad by Kaan KAZAZ
+
+using MRSquad.Library;
+using System;
 
 namespace MRSquad.ConsoleApp
 {
@@ -8,10 +11,8 @@ namespace MRSquad.ConsoleApp
         {
             try
             {
-                Console.WriteLine("MRSquad by Kaan KAZAZ");
-
                 IPlanetSurface mars = new MarsSurface("5 5");
-                Console.WriteLine($"X coord:{mars._width}, Y coord:{mars._height}");
+                //Console.WriteLine($"X coord:{mars._width}, Y coord:{mars._height}");
 
                 //IVehicle rover1 = new MarsRover("1 2 N", "LMLMLMLMM", mars);
                 //Console.WriteLine(rover1.PrintFinalPositionAndHeading());

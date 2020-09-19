@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MRSquad.ConsoleApp
+namespace MRSquad.Library
 {
     public class MarsSurface : IPlanetSurface
     {
@@ -22,7 +22,7 @@ namespace MRSquad.ConsoleApp
 
         private void ParseSurfaceSize(string coords)
         {
-            string[] surfaceXY = coords.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            string[] surfaceXY = coords.Split(' ', (char)StringSplitOptions.RemoveEmptyEntries);
 
             if (surfaceXY.Length != 2)
                 throw new MRSquadException("Surface size must consist of two coordinates (X and Y)");

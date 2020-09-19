@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRSquad.ConsoleApp", "MRSquad.ConsoleApp\MRSquad.ConsoleApp.csproj", "{51D044EE-3A40-45B4-91A1-722FF28C7521}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRSquad.Test", "MRSquad.Test\MRSquad.Test.csproj", "{2ACF5012-F83A-4903-8809-9E9C8BBF2417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRSquad.Library", "MRSquad.Library\MRSquad.Library.csproj", "{D18ABD48-87EF-4E16-A2DB-E948582FC2FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{51D044EE-3A40-45B4-91A1-722FF28C7521}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51D044EE-3A40-45B4-91A1-722FF28C7521}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51D044EE-3A40-45B4-91A1-722FF28C7521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACF5012-F83A-4903-8809-9E9C8BBF2417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACF5012-F83A-4903-8809-9E9C8BBF2417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACF5012-F83A-4903-8809-9E9C8BBF2417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACF5012-F83A-4903-8809-9E9C8BBF2417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18ABD48-87EF-4E16-A2DB-E948582FC2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18ABD48-87EF-4E16-A2DB-E948582FC2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18ABD48-87EF-4E16-A2DB-E948582FC2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18ABD48-87EF-4E16-A2DB-E948582FC2FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
